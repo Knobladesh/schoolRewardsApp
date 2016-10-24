@@ -1,0 +1,43 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        Students </div>
+
+    <!-- Filter the students   -->
+    <div class='panel-body'>
+
+
+
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr>
+
+                        <th>Student Name</th>
+                        <th>House</th>
+                        <th>Class</th>
+                        <th>Total Points</th>
+                        <th>Avialable Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let student of students'>
+
+                        <!--     <td> <a [routerLink]="['/student', student.id]" routerLinkActive="active">
+                            {{student.studentName}}
+                            </a>
+                        </td>-->
+                        <td (click)="onSelect(student)"> {{student.studentName}}
+                        </td>
+                        <td>{{ student.houseName }}</td>
+                        <td>{{ student.class }}</td>
+
+                        <td>{{ student.totalPoints}}</td>
+                        <td>{{ student.availablePoints}}</td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

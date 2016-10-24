@@ -1,0 +1,54 @@
+<div class="md1-grid" *ngIf='student'>
+ 
+    <div class="mdl-cell mdl-cell--8-col mdl-cell--stretch">
+        <div class="w3-col w3-white">
+            
+
+            <div class="w3-half">
+                <div class="w3-container w3-red w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-diamond w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>{{student.totalPoints}}</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Total Points Earned</h4>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-container w3-blue w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-money w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>{{student.availablePoints}}</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Avialable Points</h4>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-container w3-teal w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-user w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>{{student.class}}</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Class</h4>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-container w3-orange w3-text-white w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-rocket w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>{{student.houseName}}</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>House</h4>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</div>

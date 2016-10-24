@@ -1,0 +1,29 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer" *ngIf='student'>
+        <div class="mdl-card">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text" [class.mdl-card__title-text]="student.studentName">{{student.studentName}}</h2>
+            </div>
+            <div class="mdl-card__media">
+                <img src="../app/assets/images/img_avatar3.png" border="0" alt="" width="200px">
+            </div>
+            <div class="mdl-card__supporting-text">
+                {{student.class}}
+            </div>
+            
+        </div>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link mdl-js-ripple-effect" [routerLink]="['./']">Home</a>
+            <a class="mdl-navigation__link" [routerLink]="['./medals']">Medals</a>
+
+        </nav>
+        
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            <router-outlet></router-outlet>
+
+        </div>
+    </main>
+</div>

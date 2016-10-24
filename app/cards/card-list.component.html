@@ -1,0 +1,27 @@
+<div class="cardsSection">
+  
+  <!--  <ul class="demo-list-three mdl-list">
+    <li class="mdl-list__item mdl-list__item--three-line" *ngFor='let card of cards'>
+      <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar" *ngFor='let value of card.rewardValues'>{{ value.valueName }}</i>
+      <span>{{card.teacherName}}</span>
+      <span class="mdl-list__item-text-body">
+        {{ card.comment }}
+      </span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+    </li>
+
+
+  </ul>-->
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col" *ngFor='let card of cards'>
+      <rewardsCard [card]="card"></rewardsCard>
+      
+    </div>
+
+  </div>
+
+</div>
